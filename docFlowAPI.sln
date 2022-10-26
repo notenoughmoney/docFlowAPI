@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "docFlowAPI", "docFlowAPI\docFlowAPI.csproj", "{C7F17795-0B79-470F-8F9E-29499125B3FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7F17795-0B79-470F-8F9E-29499125B3FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7F17795-0B79-470F-8F9E-29499125B3FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7F17795-0B79-470F-8F9E-29499125B3FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7F17795-0B79-470F-8F9E-29499125B3FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59A66BE6-AA53-461B-93D9-C2F504B9EFC3}
+	EndGlobalSection
+EndGlobal
