@@ -7,15 +7,15 @@ using TodoApi.Models;
 namespace docFlowAPI.Controllers {
     [Route("api/[controller]")]
     [ApiController]
-    public class WorkersController : ControllerBase {
+    public class JobsController : ControllerBase {
         private readonly IConfiguration _configuration;
-        public WorkersController(IConfiguration configuration) {
+        public JobsController(IConfiguration configuration) {
             _configuration = configuration;
         }
 
         [HttpGet]
         public JsonResult Get() {
-            string query = @"select * from get_workers()";
+            string query = @"select * from get_jobs()";
 
             DataTable table = new DataTable();
             string sqlDataSource = _configuration.GetConnectionString("docFlow");
@@ -34,8 +34,8 @@ namespace docFlowAPI.Controllers {
         }
 
         [HttpPost]
-        public JsonResult Post(Workers workers) {
-            string query = @"call add_worker(@WorkerFullname, @JobId, @IsClassroomTeacher)";
+        public JsonResult Post(Jobs jobs) {
+            string query = @"call add_job(@JobTitle)";
 
             DataTable table = new DataTable();
             string sqlDataSource = _configuration.GetConnectionString("docFlow");
@@ -43,9 +43,7 @@ namespace docFlowAPI.Controllers {
             using (NpgsqlConnection myCon = new NpgsqlConnection(sqlDataSource)) {
                 myCon.Open();
                 using (NpgsqlCommand myCommand = new NpgsqlCommand(query, myCon)) {
-                    myCommand.Parameters.AddWithValue("@WorkerFullname", workers.WorkerFullname);
-                    myCommand.Parameters.AddWithValue("@JobId", workers.JobId);
-                    myCommand.Parameters.AddWithValue("@IsClassroomTeacher", workers.IsClassroomTeacher);
+                    myCommand.Parameters.AddWithValue("@JobTitle", jobs.JobTitle);
                     try {
                         myReader = myCommand.ExecuteReader();
                     } catch (PostgresException ex) {
@@ -62,8 +60,8 @@ namespace docFlowAPI.Controllers {
         }
 
         [HttpPut]
-        public JsonResult Put(Workers workers) {
-            string query = @"call update_worker(@WorkerId, @WorkerFullname, @JobId, @IsClassroomTeacher)";
+        public JsonResult Put(Jobs jobs) {
+            string query = @"call update_job(@JobId, @JobTitle)";
 
             DataTable table = new DataTable();
             string sqlDataSource = _configuration.GetConnectionString("docFlow");
@@ -71,10 +69,8 @@ namespace docFlowAPI.Controllers {
             using (NpgsqlConnection myCon = new NpgsqlConnection(sqlDataSource)) {
                 myCon.Open();
                 using (NpgsqlCommand myCommand = new NpgsqlCommand(query, myCon)) {
-                    myCommand.Parameters.AddWithValue("@WorkerId", workers.WorkerId);
-                    myCommand.Parameters.AddWithValue("@WorkerFullname", workers.WorkerFullname);
-                    myCommand.Parameters.AddWithValue("@JobId", workers.JobId);
-                    myCommand.Parameters.AddWithValue("@IsClassroomTeacher", workers.IsClassroomTeacher);
+                    myCommand.Parameters.AddWithValue("@JobId", jobs.JobId);
+                    myCommand.Parameters.AddWithValue("@JobTitle", jobs.JobTitle);
                     try {
                         myReader = myCommand.ExecuteReader();
                     } catch (PostgresException ex) {
@@ -92,7 +88,7 @@ namespace docFlowAPI.Controllers {
 
         [HttpDelete("{id}")]
         public JsonResult Delete(int id) {
-            string query = @"call del_worker(@WorkerId)";
+            string query = @"call del_job(@JobId)";
 
             DataTable table = new DataTable();
             string sqlDataSource = _configuration.GetConnectionString("docFlow");
@@ -100,7 +96,7 @@ namespace docFlowAPI.Controllers {
             using (NpgsqlConnection myCon = new NpgsqlConnection(sqlDataSource)) {
                 myCon.Open();
                 using (NpgsqlCommand myCommand = new NpgsqlCommand(query, myCon)) {
-                    myCommand.Parameters.AddWithValue("@WorkerId", id);
+                    myCommand.Parameters.AddWithValue("@JobId", id);
                     try {
                         myReader = myCommand.ExecuteReader();
                     } catch (PostgresException ex) {
