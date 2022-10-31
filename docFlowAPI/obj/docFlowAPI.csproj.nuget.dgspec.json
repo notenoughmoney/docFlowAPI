@@ -11,7 +11,7 @@
         "projectName": "docFlowAPI",
         "projectPath": "C:\\Users\\User\\source\\repos\\docFlowAPI\\docFlowAPI\\docFlowAPI.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Source\\Repos\\docFlowAPI\\docFlowAPI\\obj\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\docFlowAPI\\docFlowAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
