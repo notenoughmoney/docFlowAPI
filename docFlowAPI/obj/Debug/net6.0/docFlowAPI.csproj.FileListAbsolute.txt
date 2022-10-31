@@ -30,3 +30,35 @@ C:\Users\Dmitrii Kriazhev\source\repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\Mi
 C:\Users\Dmitrii Kriazhev\source\repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\Users\Dmitrii Kriazhev\source\repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\Dmitrii Kriazhev\source\repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\Npgsql.dll
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\appsettings.json
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\docFlowAPI.exe
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\docFlowAPI.deps.json
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\docFlowAPI.runtimeconfig.json
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\docFlowAPI.dll
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\docFlowAPI.pdb
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\Npgsql.dll
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\docFlowAPI.csproj.AssemblyReference.cache
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\docFlowAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\docFlowAPI.AssemblyInfoInputs.cache
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\docFlowAPI.AssemblyInfo.cs
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\docFlowAPI.csproj.CoreCompileInputs.cache
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\docFlowAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\docFlowAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\scopedcss\bundle\docFlowAPI.styles.css
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\docFlowAPI.csproj.CopyComplete
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\docFlowAPI.dll
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\refint\docFlowAPI.dll
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\docFlowAPI.pdb
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\docFlowAPI.genruntimeconfig.cache
+C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\ref\docFlowAPI.dll

@@ -6,5 +6,7 @@
         public string? WorkerFullname { get; set; }
         public int JobId { get; set; }
         public bool IsClassroomTeacher { get; set; }
+        public string? Mail { get; set; }
+        public string? Password { get; set; }
     }
 }

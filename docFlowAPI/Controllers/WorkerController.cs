@@ -35,7 +35,7 @@ namespace docFlowAPI.Controllers {
 
         [HttpPost]
         public JsonResult Post(Workers workers) {
-            string query = @"call add_worker(@WorkerFullname, @JobId, @IsClassroomTeacher)";
+            string query = @"call add_worker(@WorkerFullname, @JobId, @IsClassroomTeacher, @Mail, @Password)";
 
             DataTable table = new DataTable();
             string sqlDataSource = _configuration.GetConnectionString("docFlow");
@@ -46,6 +46,8 @@ namespace docFlowAPI.Controllers {
                     myCommand.Parameters.AddWithValue("@WorkerFullname", workers.WorkerFullname);
                     myCommand.Parameters.AddWithValue("@JobId", workers.JobId);
                     myCommand.Parameters.AddWithValue("@IsClassroomTeacher", workers.IsClassroomTeacher);
+                    myCommand.Parameters.AddWithValue("@Mail", workers.Mail);
+                    myCommand.Parameters.AddWithValue("@Password", workers.Password);
                     try {
                         myReader = myCommand.ExecuteReader();
                     } catch (PostgresException ex) {
@@ -63,7 +65,7 @@ namespace docFlowAPI.Controllers {
 
         [HttpPut]
         public JsonResult Put(Workers workers) {
-            string query = @"call update_worker(@WorkerId, @WorkerFullname, @JobId, @IsClassroomTeacher)";
+            string query = @"call update_worker(@WorkerId, @WorkerFullname, @JobId, @IsClassroomTeacher, @Mail, @Password)";
 
             DataTable table = new DataTable();
             string sqlDataSource = _configuration.GetConnectionString("docFlow");
@@ -75,6 +77,8 @@ namespace docFlowAPI.Controllers {
                     myCommand.Parameters.AddWithValue("@WorkerFullname", workers.WorkerFullname);
                     myCommand.Parameters.AddWithValue("@JobId", workers.JobId);
                     myCommand.Parameters.AddWithValue("@IsClassroomTeacher", workers.IsClassroomTeacher);
+                    myCommand.Parameters.AddWithValue("@Mail", workers.Mail);
+                    myCommand.Parameters.AddWithValue("@Password", workers.Password);
                     try {
                         myReader = myCommand.ExecuteReader();
                     } catch (PostgresException ex) {
