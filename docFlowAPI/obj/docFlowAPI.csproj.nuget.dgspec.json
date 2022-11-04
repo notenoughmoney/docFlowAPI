@@ -44,6 +44,10 @@
               "target": "Package",
               "version": "[6.0.10, )"
             },
+            "MimeTypeMapOfficial": {
+              "target": "Package",
+              "version": "[1.0.17, )"
+            },
             "Npgsql": {
               "target": "Package",
               "version": "[6.0.7, )"

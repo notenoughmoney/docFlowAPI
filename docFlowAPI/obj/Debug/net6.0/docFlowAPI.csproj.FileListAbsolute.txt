@@ -62,3 +62,4 @@ C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\refint\docFlow
 C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\docFlowAPI.pdb
 C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\docFlowAPI.genruntimeconfig.cache
 C:\Users\User\Source\Repos\docFlowAPI\docFlowAPI\obj\Debug\net6.0\ref\docFlowAPI.dll
+C:\Users\User\source\repos\docFlowAPI\docFlowAPI\bin\Debug\net6.0\MimeTypes.dll

@@ -5,7 +5,9 @@ using Microsoft.AspNetCore.Mvc;
 using Npgsql;
 using System.Data;
 using System.Net;
+using System.Net.Http.Headers;
 using TodoApi.Models;
+using MimeTypes;
 
 namespace docFlowAPI.Controllers
 {
@@ -22,6 +24,8 @@ namespace docFlowAPI.Controllers
         }
 
 
+        // вот этот контроллер самый обычный
+        // он отсылает данные (название и ссылку на файл)
         [HttpGet]
         public JsonResult Get()
         {
@@ -43,6 +47,19 @@ namespace docFlowAPI.Controllers
                 }
             }
             return new JsonResult(table);
+        }
+
+        // а вот этот контроллер чисто отсылает файл
+        [HttpGet]
+        [Route("download")]
+        public async Task<FileStreamResult> Stream(string fileName)
+        {
+            string localFilePath = "UploadedFiles\\Shablons\\" + fileName;
+
+            var stream = new MemoryStream(System.IO.File.ReadAllBytes(localFilePath));
+            var response = File(stream, "application/vnd.openxmlformats-officedocument.wordprocessingml.document");
+            //var response = File(stream, "image/jpeg");
+            return response;
         }
 
 

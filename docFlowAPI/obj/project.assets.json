@@ -73,6 +73,15 @@
           }
         }
       },
+      "MimeTypeMapOfficial/1.0.17": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.1/MimeTypes.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/MimeTypes.dll": {}
+        }
+      },
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
@@ -347,6 +356,22 @@
         "microsoft.openapi.nuspec"
       ]
     },
+    "MimeTypeMapOfficial/1.0.17": {
+      "sha512": "f6DSQSYTckCjq1ifRj0fSLiEmDv+22uo4+JjTeb3MNZK3Ban1XLjA+bTQtD+/7x2NBEAGzBLYIRpS1IU2OgIAw==",
+      "type": "package",
+      "path": "mimetypemapofficial/1.0.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/MimeTypes.dll",
+        "lib/net48/MimeTypes.dll",
+        "lib/netcoreapp2.2/MimeTypes.dll",
+        "lib/netcoreapp3.1/MimeTypes.dll",
+        "lib/netstandard2.0/MimeTypes.dll",
+        "mimetypemapofficial.1.0.17.nupkg.sha512",
+        "mimetypemapofficial.nuspec"
+      ]
+    },
     "Newtonsoft.Json/13.0.1": {
       "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "type": "package",
@@ -528,6 +553,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 6.0.10",
+      "MimeTypeMapOfficial >= 1.0.17",
       "Npgsql >= 6.0.7",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
@@ -538,11 +564,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\docFlowAPI\\docFlowAPI\\docFlowAPI.csproj",
+      "projectUniqueName": "C:\\Users\\User\\source\\repos\\docFlowAPI\\docFlowAPI\\docFlowAPI.csproj",
       "projectName": "docFlowAPI",
-      "projectPath": "C:\\Users\\User\\Source\\Repos\\docFlowAPI\\docFlowAPI\\docFlowAPI.csproj",
+      "projectPath": "C:\\Users\\User\\source\\repos\\docFlowAPI\\docFlowAPI\\docFlowAPI.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Source\\Repos\\docFlowAPI\\docFlowAPI\\obj\\",
+      "outputPath": "C:\\Users\\User\\source\\repos\\docFlowAPI\\docFlowAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -574,6 +600,10 @@
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
             "target": "Package",
             "version": "[6.0.10, )"
+          },
+          "MimeTypeMapOfficial": {
+            "target": "Package",
+            "version": "[1.0.17, )"
           },
           "Npgsql": {
             "target": "Package",

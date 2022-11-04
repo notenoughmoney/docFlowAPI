@@ -9,6 +9,7 @@
       "docFlowAPI/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.10",
+          "MimeTypeMapOfficial": "1.0.17",
           "Npgsql": "6.0.7",
           "Swashbuckle.AspNetCore": "6.2.3"
         },
@@ -48,6 +49,14 @@
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
             "assemblyVersion": "1.2.3.0",
             "fileVersion": "1.2.3.0"
+          }
+        }
+      },
+      "MimeTypeMapOfficial/1.0.17": {
+        "runtime": {
+          "lib/netcoreapp3.1/MimeTypes.dll": {
+            "assemblyVersion": "2.3.2.0",
+            "fileVersion": "2.3.2.0"
           }
         }
       },
@@ -162,6 +171,13 @@
       "sha512": "sha512-Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
       "path": "microsoft.openapi/1.2.3",
       "hashPath": "microsoft.openapi.1.2.3.nupkg.sha512"
+    },
+    "MimeTypeMapOfficial/1.0.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-f6DSQSYTckCjq1ifRj0fSLiEmDv+22uo4+JjTeb3MNZK3Ban1XLjA+bTQtD+/7x2NBEAGzBLYIRpS1IU2OgIAw==",
+      "path": "mimetypemapofficial/1.0.17",
+      "hashPath": "mimetypemapofficial.1.0.17.nupkg.sha512"
     },
     "Newtonsoft.Json/13.0.1": {
       "type": "package",
