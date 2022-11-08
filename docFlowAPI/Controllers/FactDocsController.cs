@@ -63,7 +63,13 @@ namespace docFlowAPI.Controllers
                 using (NpgsqlCommand myCommand = new NpgsqlCommand(query, myCon))
                 {
                     myCommand.Parameters.AddWithValue("@WorkerId", workerId);
-                    myReader = myCommand.ExecuteReader();
+                    try
+                    {
+                        myReader = myCommand.ExecuteReader();
+                    } catch (PostgresException ex)
+                    {
+                        return new JsonResult(ex.Message);  
+                    }
                     table.Load(myReader);
 
                     myReader.Close();
@@ -74,9 +80,9 @@ namespace docFlowAPI.Controllers
         }
 
         // сдать документ и соответственно загрузить его
-        [HttpPut]
+        [HttpPut("{id}")]
         public IActionResult Put(
-            [ModelBinder(BinderType = typeof(JsonModelBinder))] int factDocId,
+            [ModelBinder(BinderType = typeof(JsonModelBinder))] int id,
             IList<IFormFile> files)
         {
             // пускай при обновлении записи существующий файл не будет обновляться
@@ -110,7 +116,7 @@ namespace docFlowAPI.Controllers
                 myCon.Open();
                 using (NpgsqlCommand myCommand = new NpgsqlCommand(query, myCon))
                 {
-                    myCommand.Parameters.AddWithValue("@FactDocId", factDocId);
+                    myCommand.Parameters.AddWithValue("@FactDocId", id);
                     myCommand.Parameters.AddWithValue("@LinkToFile", dir);
                     try
                     {
